@@ -1,0 +1,85 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 650px;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(7,1fr);
+  gap: 15px;
+  
+}
+body .black{
+    background-color: black;
+    color: white;
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row: 1fr;
+}
+
+body .black .first{
+    display: flex;
+    align-items: flex-end;
+    
+}
+body .black .second{
+    display: flex;
+    align-items: flex-end;
+    grid-column: span 2;
+    
+}
+body .black .third{
+    display: flex;
+    align-items: flex-end;
+    grid-column-start: 4;
+    padding-right: 13px;
+}
+body .bad{
+    background-color: #f14011;
+    color: black;
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: flex-end;
+    font-size: 180px;
+    font-weight: 700;
+}
+body .blank{
+    background-color: #f14011;
+    grid-row: 2 / span 3;
+    grid-column: 3 / -1;
+    
+}
+
+body .separate_2{
+    display: grid;
+    flex-direction: column;
+    background-color: #f14011;
+    grid-row: 5 / span 3;
+    grid-column: 1 / -1;
+    
+    
+}
+body .separate_2 .religion{
+    font-size: 180px;
+    font-weight: 700;
+    
+    
+}
+
+body .separate_2 .jaw{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    padding-left: 15px;
+    
+    
+}
